@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\admin\Data\" />
+    <Folder Include="Areas\admin\Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\js\site.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NewsPublish.Model\NewsPublish.Model.csproj" />
+    <ProjectReference Include="..\NewsPublish.Service\NewsPublish.Service.csproj" />
+  </ItemGroup>
+
+</Project>
